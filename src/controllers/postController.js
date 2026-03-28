@@ -57,7 +57,7 @@ exports.getPostById = async (req, res, next) => {
 };
 
 // POST /api/posts — محمي
-exports.createPost = async (req, res) => {
+exports.createPost = async (req, res, next) => {
   try {
     const { title, content } = req.body;
 
@@ -76,7 +76,7 @@ exports.createPost = async (req, res) => {
 };
 
 // PUT /api/posts/:id — محمي
-exports.updatePost = async (req, res) => {
+exports.updatePost = async (req, res, next) => {
   try {
     const post = await Post.findById(req.params.id);
 
@@ -103,7 +103,7 @@ exports.updatePost = async (req, res) => {
 };
 
 // DELETE /api/posts/:id — محمي
-exports.deletePost = async (req, res) => {
+exports.deletePost = async (req, res, next) => {
   try {
     const post = await Post.findById(req.params.id);
 

@@ -1,0 +1,6 @@
+// Blog API/.env
+MONGO_URI=mongodb+srv://chibaabdallah05_db_user:7q9sv6B4H3T1UdWj@cluster0.lmb7lhk.mongodb.net/blog-api
+JWT_SECRET=a42ae83d8ada1731df28711aeda56f6adc5dee6faea676d8ef91b17e67599a31b52e21bcee7fb9015c6d976356cdc9a6ae089c0d8de8e4b20b532cb31abe04f7
+CLIENT_URL=https://my-frontend.vercel.app
+NODE_ENV=production
+
